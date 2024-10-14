@@ -37,7 +37,35 @@ fun conditionalStatement(){
     catch (e: NumberFormatException){
         println("Invalid Number")
     }
+}
 
+fun perulangan(){
+    println("== Perulangan ==")
 
+    for (i in 1..5){
+        println("Perulangan ke - $i")
+    }
 
+    val mobil = listOf("Toyota","BMW","Porsche")
+    for (car in mobil){
+        println("Merk Mobil $car")
+    }
+
+    var x =1
+    while (x<=5){
+        println("Nomor ke-$x")
+        x++
+    }
+
+    var y =1
+    do{
+        println("Urutan ke-$y")
+        y++
+    }
+        while (y<=5)
+
+}
+
+fun main(){
+    perulangan()
 }
